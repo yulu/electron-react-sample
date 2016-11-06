@@ -4,19 +4,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 //Import Search Component
-import Search from './components/search.component';
+import AppContainer from './containers/app.container';
 
-//Import Details Component
-import Details from './components/details.component';
-
-//Import Player Component
-import Player from './components/player.component';
-
-//Import Progress Component
-import Progress from './components/progress.component';
-
-//Import Footer Component
-import Footer from './components/footer.component';
 
 //Search component created as a class
 class App extends React.Component {
@@ -26,15 +15,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Search />
-        <Details title={'Track title'} />
-        <Player />
-        <Progress
-          position={'0.3'}
-          elapsed={'00:00'}
-          total={'0:40'}
-          />
-        <Footer />
+        <AppContainer />
       </div>
     );
   }
